@@ -1,25 +1,34 @@
 package Java;
 
-import java.io.Console;
-
 class Car {
- //  Integer id;
-    String license;
-    Account driver;
-   // Integer passenger;
+    private Integer id;
+    private String license;
+    private Account driver;
+    private Integer passenger;
 
-    void constructor(license, driver) {
-        this.id;
+    public Car(String license, Account driver) {
         this.license = license;
         this.driver =  driver;
-        this.passenger;
-
+      //  System.out.println("Pasajeros: "+passenger);
     }
 
-    printDataCar(){
-        Console.log(this.driver);
-        Console.log(this.driver.name);
-        Console.log(this.driver.document);
+    void printDataCar(){
+        if(passenger != null) {
+        System.out.println("License: " +license +" Name Driver: " + driver.name +" Passenger: " +passenger);
+    }s
+    }
+    
+    public Integer getPassenger(){
+        return passenger;
+    }
+
+    public void setPassenger(Integer passenger){
+        if(passenger==4){
+            this.passenger= passenger;
+        }else{
+            System.out.println("Necesitas asignar 4 pasajeros");
+        }
+
     }
 
 }

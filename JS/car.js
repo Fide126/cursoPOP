@@ -1,6 +1,6 @@
 function car (){
     this.id;
-    this.licencia;
+    this.license;
     this.driver;
     this.pasajero;
 }

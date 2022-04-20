@@ -5,9 +5,14 @@ class UberX extends Car {
     String model;
 
     public UberX(String license, Account driver, String brand, String model){
-        super();
+        super(license,driver);
         this.brand = brand;
         this.model=model;
-    
+        
+    }
+
+    void printDataCar(){
+        super.printDataCar();
+        System.out.println("Modelo: " +model +" Brand " + brand );
     }
 }

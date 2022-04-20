@@ -8,6 +8,15 @@ class UberBlack extends Car{
         parent::__constructor($license, $driver);
         $this->typeCarAccepted = $typeCarAccepted;
         $this->seatMaterial = $seatMaterial;
-    }    
+    }   
+    
+    public function setPassenger($passenger){
+        if ($passenger==6) {
+            $this->$passenger=$passenger;
+        }
+        else {
+            echo"Necesitas asignar 6 pasajeros";
+        }
+    }
 }
 ?>

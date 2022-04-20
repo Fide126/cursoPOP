@@ -1,13 +1,13 @@
 package Java;
 
-class Account {
+class Account{
 
-   void constructor(name, document){
+void constructor(name, document){
         this.id;
         this.name = name;
         this.document = document;
-        this.email;
-        this.password;
+        this.email = email;
+        this.password= password;
    }
 
-}
+}*/
